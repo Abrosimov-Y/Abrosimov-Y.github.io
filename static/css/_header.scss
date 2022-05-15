@@ -24,24 +24,24 @@ $yellow: #f1c40f;
             height: 90vh;
         }
         &__main {
-            height: 80vh;
+            padding-top: 5em;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-left: 0;
             @include media('>=LGdesktop') {
-                margin-left: 300px;
-                display: flex;
+                padding-top: 12em;
             }
             @include media('<=phone') {
                 margin-left: 120px;
+                padding-top: 0em;
+                
             }
             &__text {
                 width: 900px;
                 opacity: 0;
                 margin-top: 100px;
                 animation: slide_right 0.9s linear forwards;
-                margin-left: 90px;
                 @include media('<=tablet') {
                     margin-left: 20em;
                 }
@@ -51,10 +51,9 @@ $yellow: #f1c40f;
                     width: 700px;
                 }
                 @include media('<=phone') { 
-                    margin-top: 0;
                     margin-left: 140px;
                     width: 400px;
-                    margin-top: 200px;
+                    margin-top: 9em;
                 }
                 @keyframes slide_right {
                     0%{
@@ -81,10 +80,11 @@ $yellow: #f1c40f;
                         }
                         @include media('<=phone') { 
                             font-size: 30px;
+                            line-height: 50px;
                         }
                     }
                     .yellow_text {
-                        font-family: Oswald;
+                        font-family: $oswald;
                         font-style: normal;
                         font-weight: normal;
                         font-size: 40px;
@@ -93,6 +93,7 @@ $yellow: #f1c40f;
                         letter-spacing: 0.06em;
                         @include media('>=LGdesktop') {
                             width: 100%;
+                            font-size: 42px;
                         }   
                         @include media('<=desktop') {
                             width: 100%;
@@ -115,15 +116,16 @@ $yellow: #f1c40f;
                     width: 700px;
                     margin-top: 20px;  
                     p {
-                        font-family: Oswald;
+                        font-family: $oswald;
                         font-style: normal;
                         font-weight: normal;
                         font-size: 29px;
                         line-height: 43px;
                         letter-spacing: 0.06em;
-                        color: #d8d8d8;
+                        color: #f8f8f8;
                         @include media('>=LGdesktop') {
                             height: 100%;
+                            font-size: 31px;
                         } 
                         @include media('<=desktop') {
                             width: 75%;
@@ -135,14 +137,17 @@ $yellow: #f1c40f;
                         }
                     }
                     span {
-                        font-family: Oswald;
+                        font-family: $oswald;
                         font-style: normal;
                         font-weight: normal;
                         font-size: 29px;
                         line-height: 43px;
                         letter-spacing: 0.06em;
-                        color: #d8d8d8;
+                        color: #f8f8f8;
                         display: block;
+                        @include media('>=LGdesktop') {
+                            font-size: 31px;
+                        } 
                         @include media('<=phone') { 
                             font-size: 19px;
                         }

@@ -403,7 +403,7 @@ textarea {
 }
 
 .section-header-wrapper__main {
-  height: 80vh;
+  padding-top: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,16 +418,14 @@ textarea {
 
 @media (min-width: 1520px) {
   .section-header-wrapper__main {
-    margin-left: 300px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    padding-top: 12em;
   }
 }
 
 @media (max-width: 530px) {
   .section-header-wrapper__main {
     margin-left: 120px;
+    padding-top: 0em;
   }
 }
 
@@ -437,7 +435,6 @@ textarea {
   margin-top: 100px;
   -webkit-animation: slide_right 0.9s linear forwards;
           animation: slide_right 0.9s linear forwards;
-  margin-left: 90px;
 }
 
 @media (max-width: 875px) {
@@ -456,10 +453,9 @@ textarea {
 
 @media (max-width: 530px) {
   .section-header-wrapper__main__text {
-    margin-top: 0;
     margin-left: 140px;
     width: 400px;
-    margin-top: 200px;
+    margin-top: 9em;
   }
 }
 
@@ -512,11 +508,12 @@ textarea {
 @media (max-width: 530px) {
   .section-header-wrapper__main__text__big-title h1 {
     font-size: 30px;
+    line-height: 50px;
   }
 }
 
 .section-header-wrapper__main__text__big-title .yellow_text {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -528,6 +525,7 @@ textarea {
 @media (min-width: 1520px) {
   .section-header-wrapper__main__text__big-title .yellow_text {
     width: 100%;
+    font-size: 42px;
   }
 }
 
@@ -564,18 +562,19 @@ textarea {
 }
 
 .section-header-wrapper__main__text__subtitle p {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 29px;
   line-height: 43px;
   letter-spacing: 0.06em;
-  color: #d8d8d8;
+  color: #f8f8f8;
 }
 
 @media (min-width: 1520px) {
   .section-header-wrapper__main__text__subtitle p {
     height: 100%;
+    font-size: 31px;
   }
 }
 
@@ -594,14 +593,20 @@ textarea {
 }
 
 .section-header-wrapper__main__text__subtitle span {
-  font-family: Oswald;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 29px;
   line-height: 43px;
   letter-spacing: 0.06em;
-  color: #d8d8d8;
+  color: #f8f8f8;
   display: block;
+}
+
+@media (min-width: 1520px) {
+  .section-header-wrapper__main__text__subtitle span {
+    font-size: 31px;
+  }
 }
 
 @media (max-width: 530px) {
@@ -878,7 +883,6 @@ textarea {
   height: 70px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  background-color: #122c74;
 }
 
 .section-header-wrapper__navbar__logo {
@@ -907,8 +911,8 @@ textarea {
 @media (max-width: 530px) {
   .section-header-wrapper__navbar__logo {
     margin-left: 0px;
-    width: 160px;
-    height: 30px;
+    width: 170px;
+    height: 60px;
   }
 }
 
@@ -968,7 +972,7 @@ textarea {
 }
 
 .section-header-wrapper__navbar__links .link .link_a {
-  color: #f8f8f8;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   text-decoration: none;
@@ -1021,11 +1025,15 @@ textarea {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   color: #f8f8f8;
+  background-color: #1F4287;
   font-family: "Montserrat", sans-serif;
+  -webkit-transition: 0.8 ease-in;
+  transition: 0.8 ease-in;
 }
 
 .section-header-wrapper__navbar__links .menu-hamburger .toggle-links__link:hover {
   opacity: 1;
+  background-color: #194295;
 }
 
 .section-header-wrapper__navbar__links .menu-hamburger .toggle-links__link .text {
@@ -1131,10 +1139,6 @@ textarea {
   height: 70px;
 }
 
-.change-background {
-  background-color: #1F4287;
-}
-
 .section-company {
   height: 45vh;
   background-color: #122f80;
@@ -1225,6 +1229,12 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 50vh;
     width: 100%;
   }
@@ -1237,6 +1247,13 @@ textarea {
   width: 100px;
   height: 100px;
   margin-left: 30px;
+}
+
+@media (max-width: 530px) {
+  .section-company-wrapper__companies .glavstroy {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .section-company-wrapper__companies .pik-group {
@@ -1256,7 +1273,7 @@ textarea {
 
 @media (max-width: 530px) {
   .section-company-wrapper__companies .pik-group {
-    width: 160px;
+    width: 170px;
   }
 }
 
@@ -1298,9 +1315,10 @@ textarea {
 
 @media (max-width: 530px) {
   .section-company-wrapper__companies .samolet {
-    margin-left: 0;
     margin-right: 30px;
-    font-size: 30px;
+    font-size: 32px;
+    margin-left: 0;
+    margin-top: 30px;
   }
 }
 
@@ -1323,24 +1341,10 @@ textarea {
 
 @media (max-width: 530px) {
   .section-company-wrapper__companies .ingrad {
-    margin-left: 90px;
     width: 160px;
     height: 120px;
     margin-top: 50px;
-  }
-}
-
-@media (max-width: 370px) {
-  .section-company-wrapper__companies .samolet {
     margin-left: 0;
-    margin-right: 10px;
-    position: absolute;
-    right: 0;
-    top: 270px;
-  }
-  .phasad {
-    width: 180px;
-    height: 120px;
   }
 }
 
@@ -1710,6 +1714,7 @@ textarea {
   .section-works-wrapper .left-arrow {
     width: 50px;
     height: 50px;
+    margin-top: 72%;
   }
 }
 
@@ -1721,13 +1726,14 @@ textarea {
   background-size: contain;
   position: absolute;
   right: 0%;
-  margin-top: 51%;
+  margin-top: 50%;
 }
 
 @media (max-width: 530px) {
   .section-works-wrapper .right-arrow {
     width: 50px;
     height: 50px;
+    margin-top: 72%;
   }
 }
 
@@ -2054,7 +2060,7 @@ textarea {
   left: 0;
   background-color: #122c74;
   border: 1px solid #121111;
-  width: 100%;
+  width: 101%;
   height: 100%;
   border-radius: 5px;
   z-index: -1;
@@ -2064,7 +2070,7 @@ textarea {
   content: '';
   position: absolute;
   top: -10px;
-  left: 1px;
+  left: 2px;
   background-color: #EDF112;
   width: 99%;
   height: 100%;
@@ -2154,17 +2160,6 @@ textarea {
   .section-advantages {
     height: 100vh;
     padding-bottom: 10%;
-  }
-}
-
-@media (min-height: 670px) and (max-height: 822px) and (min-width: 390px) and (max-width: 480px) {
-  .section-advantages {
-    height: 100vh;
-    padding-bottom: 300%;
-  }
-  .section-advantages-wrapper {
-    height: 100vh;
-    padding-bottom: 300%;
   }
 }
 

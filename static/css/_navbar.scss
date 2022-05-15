@@ -9,7 +9,7 @@
     z-index: 1;
     height: 70px;
     transition: 0.7s;
-    background-color: $dark-blue;
+    // background-color: $dark-blue;
     &__logo {
         display: flex;
         justify-content: center;
@@ -25,8 +25,8 @@
         opacity: 0;
         @include media('<=phone') {
             margin-left: 0px;
-            width: 160px;
-            height: 30px;
+            width: 170px;
+            height: 60px;
         }
     }
     @keyframes slide_left {
@@ -54,7 +54,7 @@
                 display: none;
             }
               .link_a {
-                color: #f8f8f8;
+                color: #fff;
                 font-family: "Montserrat", sans-serif;
                 font-size: 14px;
                 text-decoration: none;
@@ -80,7 +80,6 @@
                 width: 100%;
                 transition: all ease .5s;
                 opacity: 0.1;
-
                 &__link {
                     width: 100%;
                     height: 50px;
@@ -91,9 +90,12 @@
                     opacity: 0.4;
                     transition: 0.2s;
                     color: #f8f8f8;
+                    background-color: #1F4287;
                     font-family: "Montserrat", sans-serif;
+                    transition: 0.8 ease-in;
                     &:hover {
                         opacity: 1;
+                        background-color: #194295;
                     }
                     .text {
                     color: #f8f8f8;
@@ -177,7 +179,4 @@
 .sticky {
     background-color: #194295;
     height: 70px;
-}
-.change-background {
-    background-color: #1F4287;
 }
