@@ -7,10 +7,10 @@
         height: 100vh;
     }
     @include media('<=desktop') {
-        height: 105vh;
+        height: 115vh;
     }
     @include media('<=tablet') {
-        height: 100vh;
+        height: 115vh;
     }
     @include media('<=phone') {
         height: 100vh;
@@ -21,7 +21,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        height: 90vh;
+        height: 100vh;
         @include media('>=LGdesktop') {
             height: 65vh;
         }
@@ -30,7 +30,6 @@
         }
         @include media('<=phone') {
             height: 100vh;
-            padding-bottom: 200%;
         }
         &__title {
             margin-top: 25px;
