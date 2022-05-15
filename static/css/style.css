@@ -898,8 +898,8 @@ textarea {
   background: url("../IMG/logo_GlassfirePro.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 190px;
-  height: 40px;
+  width: 220px;
+  height: 50px;
   margin-left: 20px;
   -webkit-animation: slide_left 0.5s linear forwards;
           animation: slide_left 0.5s linear forwards;
