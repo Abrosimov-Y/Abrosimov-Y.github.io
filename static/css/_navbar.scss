@@ -16,16 +16,16 @@
         background: url('../IMG/logo_GlassfirePro.png');
         background-repeat: no-repeat;
         background-size: contain;
-        width: 220px;
-        height: 50px;
+        width: 210px;
+        height: 40px;
         margin-left: 20px;
         animation: slide_left 0.5s linear forwards;
         animation-delay: 0.2s;
         opacity: 0;
         @include media('<=phone') {
             margin-left: 0px;
-            width: 170px;
-            height: 40px;
+            width: 140px;
+            height: 30px;
         }
     }
     @keyframes slide_left {

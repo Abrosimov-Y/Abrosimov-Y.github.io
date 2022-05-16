@@ -6,6 +6,9 @@
     @include media('>=LGdesktop') {
         height: 45vh;
     }
+    @include media('<=tablet') {
+        height: 90vh;
+    }
     @include media('<=phone') {
         height: 130vh;
     }
@@ -79,11 +82,9 @@
                 margin-left: 0px;
             }
             &__contact {
-                margin-top: 60px;
                 margin-left: 20px;
-                @include media('>=LGdesktop') {
-                    margin-top: 60px;
-                }
+                height: 200px;
+                width: 200px;
                 @include media('<=phone') {
                     margin-right: 120px;
                     margin-left: 0;
@@ -157,7 +158,9 @@
                 }
             }
             &__privacy {
-                margin-top: 60px;
+                height: 200px;
+                width: 250px;
+                margin-left: 0;
                 @include media('>=LGdesktop') {
                     margin-left: 100px;
                 }
@@ -184,6 +187,8 @@
             }
             &__follow {
                 margin-right: 20px;
+                height: 200px;
+                width: 400px;
                 @include media('>=LGdesktop') {
                     margin-left: 100px;
                 }
@@ -195,9 +200,9 @@
                     margin-top: 40px;
                 }
                 @include media('<=phone') {
-                    margin-right: 70px;
                     margin-top: 60px;
                     margin-left: 0;
+                    width: 310px;
                 }
                 .icons {
                     display: flex;
