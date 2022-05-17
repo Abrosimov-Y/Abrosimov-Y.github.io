@@ -1,0 +1,147 @@
+.section-company {
+    height: 50vh;
+    background-color: #122f80;
+    @include media('>=LGdesktop') {
+        height: 30vh;
+    }
+    @include media('<=phone') {
+        height: 90vh;
+        position: relative;
+    }
+    &-wrapper {
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 20px;
+        @include media('>=LGdesktop') {
+            height: 30vh;
+        }
+        @media(max-width: 700px) {
+            height: 45vh;
+        }
+        @include media('<=phone') {
+            height: 90vh;
+            padding-bottom: 0;
+        }
+        &__title {
+            margin-top: 25px;
+            h1 {
+                display: inline;
+                color: $white;
+                font-family: $montserrat;
+                font-size: 35px;
+            }
+        }
+        &__companies {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+            width: 80%;
+            margin-left: 40px;
+            @include media('>=mpt', '<=tablet') {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            @include media('>=phone', '<=mpt') {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            @include media('<=phone') {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                height: 50vh;
+                width: 100%;
+            }
+            .glavstroy {
+                background: url('../IMG/Logo_Glavstroy.jpg');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 100px;
+                height: 100px;
+                margin-left: 30px;
+                @include media('<=phone') {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            .pik-group {
+                width: 120px;
+                height: 40px;
+                background: url('../IMG/logo_pik.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-left: 25px;
+                @include media('<=phone') {
+                    width: 170px;
+                    margin-left: 55px;
+                }
+            }
+            .phasad {
+                background: url('../IMG/group-fhasad.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 200px;
+                height: 120px;
+                margin-top: 15px;
+                @include media('>=LGdesktop') {
+                    width: 250px;
+                    height: 150px;
+                }
+                @include media('<=phone') {
+                    margin-top: 50px;
+                }
+            }
+            .samolet {
+                font-size: 40px;
+                color: #116dcfcc;
+                font-weight: 500;
+                margin-left: 30px;
+                text-decoration: none;
+                @include media('>=LGdesktop') {
+                    font-size: 40px;
+                }
+                @include media('<=phone') {
+                    margin-right: 30px;
+                    font-size: 32px;
+                    margin-left: 0;
+                    margin-top: 30px;
+                }
+            }
+            .ingrad {
+                background: url('../IMG/Ingrad.png');
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 140px;
+                height: 100px;
+                margin-left: 30px;
+                margin-top: 10px;
+                @include media('>=LGdesktop') {
+                    width: 190px;
+                    height: 150px;
+                }
+                @include media('<=desktop') {
+                    width: 120px;
+                    height: 90px;
+                    margin-left: 20px;
+                }
+                @include media('<=phone') {
+                    width: 160px;
+                    height: 120px;
+                    margin-top: 50px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
